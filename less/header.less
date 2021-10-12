@@ -1,0 +1,53 @@
+.header{
+  width: 100%;
+  height: 90px;
+  .header-in{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 14px;
+    box-sizing: border-box;
+
+    .header-in-l{
+      float: left;
+      height: 90px;
+      box-sizing: border-box;
+    }
+    .header-in-m{
+      float: right;
+      li{
+        float: left;
+        &.active{
+          color: #009bd9;
+          border-bottom: 1px solid #009bd9;
+        }
+        a{
+          display: block;
+          line-height: 61px;
+          padding: 0 10px;
+          font-size: 18px;
+          color: #333333;
+          &:hover{
+            color: #009bd9;
+            border-bottom: 1px solid #009bd9;
+          }
+
+
+        }
+      }
+
+    }
+    .header-in-r{
+      float: right;
+      width: 38px;
+      height: 50px;
+      margin-left: 20px;
+      background: url(../imgs/fdj.png) no-repeat;
+      background-position: 0 12px;
+      text-indent: -999em;
+      overflow: hidden;
+
+    }
+
+  }
+}

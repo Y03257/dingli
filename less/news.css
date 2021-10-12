@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整,防止正着放和横着放 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -webkit-appearance: none;
+  resize: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+}
+em,
+i {
+  font-style: normal;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:active {
+  color: #f60;
+}
+/* 按下状态，手机是没有hover只有按下效果 */
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+body {
+  font-size: 14px;
+  font-family: '微软雅黑';
+  color: #a6a6a6;
+}
+.header {
+  width: 100%;
+  height: 90px;
+}
+.header .header-in {
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+.header .header-in .header-in-l {
+  float: left;
+  height: 90px;
+  box-sizing: border-box;
+}
+.header .header-in .header-in-m {
+  float: right;
+}
+.header .header-in .header-in-m li {
+  float: left;
+}
+.header .header-in .header-in-m li.active {
+  color: #009bd9;
+  border-bottom: 1px solid #009bd9;
+}
+.header .header-in .header-in-m li a {
+  display: block;
+  line-height: 61px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #333333;
+}
+.header .header-in .header-in-m li a:hover {
+  color: #009bd9;
+  border-bottom: 1px solid #009bd9;
+}
+.header .header-in .header-in-r {
+  float: right;
+  width: 38px;
+  height: 50px;
+  margin-left: 20px;
+  background: url(../imgs/fdj.png) no-repeat;
+  background-position: 0 12px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.news {
+  width: 100%;
+  background-color: #fff;
+}
+.news .news-in {
+  width: 1200px;
+  margin: 0 auto;
+}
+.news .news-in .tabs {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+.news .news-in .tabs > li {
+  float: left;
+  padding: 0 29px;
+  font-size: 16px;
+}
+.news .news-in .tabs > li.active {
+  color: #009bd9;
+  border-bottom: 1px solid #009bd9;
+}
+.news .news-in .list {
+  margin-top: 46px;
+}
+.news .news-in .list > li {
+  padding: 40px 0;
+  border-bottom: 1px dashed #aaaaaa;
+  overflow: hidden;
+}
+.news .news-in .list > li .l {
+  float: left;
+  margin-right: 36px;
+}
+.news .news-in .list > li .l img {
+  width: 421px;
+  height: 281px;
+}
+.news .news-in .list > li .r {
+  float: left;
+  width: 630px;
+}
+.news .news-in .list > li .r h2 {
+  font-size: 22px;
+  color: #222222;
+  margin-bottom: 17px;
+  margin-top: 20px;
+}
+.news .news-in .list > li .r .time {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 28px;
+}
+.news .news-in .list > li .r p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+.news .news-in .list > li .r a {
+  display: block;
+  width: 150px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  background-color: #009bd9;
+  border-radius: 5px;
+}
+.news .news-in .page {
+  display: inline-block;
+  margin-top: 116px;
+  margin-bottom: 125px;
+  overflow: hidden;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #a6a6a6;
+}
+.news .news-in .page > li {
+  float: left;
+  text-align: center;
+  border-right: 1px solid #a6a6a6;
+}
+.news .news-in .page > li:last-child {
+  border-right: none;
+}
+.news .news-in .page > li > a {
+  display: block;
+  padding: 12px 24px;
+}
+.news .news-in .page > li > a.active,
+.news .news-in .page > li > a:hover {
+  background-color: #009bd9;
+  color: #fff;
+}
+.you {
+  width: 100%;
+  height: 256px;
+  background-color: #333f50;
+}
+.you .you-in {
+  width: 1200px;
+  height: 256px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.you .you-in .l {
+  float: left;
+}
+.you .you-in .l dl {
+  width: 165px;
+  float: left;
+}
+.you .you-in .l dl dt {
+  line-height: 60px;
+  font-size: 22px;
+  color: #eeeeee;
+}
+.you .you-in .l dl dd {
+  line-height: 34px;
+}
+.you .you-in .l dl dd a {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+.you .you-in .r {
+  float: right;
+}
+.you .you-in .r p {
+  font-size: 22px;
+  text-align: center;
+  color: #717985;
+}
+.footer {
+  width: 100%;
+  height: 65px;
+  background-color: #009bd9;
+}
+.footer .footer-in {
+  width: 1200px;
+  height: 65px;
+  margin: 0 auto;
+  line-height: 65px;
+}
+.footer .footer-in .l {
+  float: left;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer .footer-in .r {
+  float: right;
+}
+.footer .footer-in .r a {
+  float: left;
+  height: 100%;
+  padding: 0 18px;
+}
+/*# sourceMappingURL=news.css.map */
